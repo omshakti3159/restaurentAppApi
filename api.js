@@ -92,7 +92,7 @@ app.get('/restaurentlist/:mealtype', (req, res) => {
 MongoClient.connect(mongoUrl, (err, connection) => {
     if (err) throw err;
     db = connection.db("restaurentApp");
-    app.listen(port, (err) => {
+    app.listen(port,'0.0.0.0', (err) => {
         if (err) throw err;
         console.log(`server is runing on port ${port}`)
     })
