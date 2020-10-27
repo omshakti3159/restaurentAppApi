@@ -11,12 +11,10 @@ app.use(bodyParsor.urlencoded({ extended: true }));
 app.use(bodyParsor.json());
 const mongoUrl = "mongodb+srv://omy:13580@Okm@cluster0.ru34c.mongodb.net/restaurentApp?retryWrites=true&w=majority"
 app.get('/', (req, res) => {
-    res.send(`<a href="https://restaurentappapi.herokuapp.com/cuisine">cuisine</a>
-    res.send(`<a href="https://restaurentappapi.herokuapp.com/city">city</a>
-    res.send(`<a href="https://restaurentappapi.herokuapp.com/restaurent">restaurents</a>
-    res.send(`<a href="https://restaurentappapi.herokuapp.com/mealtype">mealtype</a>
-
-`)
+res.send(`<a href="https://restaurentappapi.herokuapp.com/cuisine">cuisine</a><br>
+<a href="https://restaurentappapi.herokuapp.com/city">city</a><br>
+<a href="https://restaurentappapi.herokuapp.com/restaurent">restaurents</a><br>
+<a href="https://restaurentappapi.herokuapp.com/mealtype">mealtype</a>`)
 })
 //-------city route----------
 app.get('/city', (req, res) => {
